@@ -1,6 +1,3 @@
-#ifndef i2cCommsDEF
-#define i2cCommsDEF
-
 #include <linux/i2c-dev.h>
 #include <stdio.h>
 #include <fcntl.h>
@@ -15,8 +12,5 @@
 #define I2C_DEV_SYS 0x0703
 
 float readTemp(void);
-void writeTempToTxt(float, std::string);
+void writeTempToTxt(float, writeToFile*);
 void logTemp(void);
-
-
-#endif

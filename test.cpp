@@ -3,10 +3,16 @@
 
 int main()
 {
+    writeToFile temperatureData("temperature.txt");
     while(1)
-    {
-        logTemp();
-    }    
+    {       
+        float temperature = readTemp();
+
+        writeTempToTxt(temperature,&temperatureData);
+
+        sleep(3);
+        
+    }   
 
     return 0;
 }
