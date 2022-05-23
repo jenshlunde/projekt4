@@ -4,15 +4,15 @@ DEPS=$(addprefix $(BUILD_DIR)/,$(SOURCES:.cpp=.d))
 EXE=prog
 CXXFLAGS=-I. -pthread
 
-CXX=g++
-BUILD_DIR=build/x86-64
-BIN_DIR=bin/x86-64
-
-
-ifeq (${ARCH},arm)
 CXX=arm-rpizw-g++
 BUILD_DIR=build/arm
 BIN_DIR=bin/arm
+
+
+ifeq (${ARCH},g++)
+CXX=g++
+BUILD_DIR=build/x86-64
+BIN_DIR=bin/x86-64
 endif
 
 
