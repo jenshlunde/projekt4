@@ -28,7 +28,14 @@ float readTemp(void)
 
 void writeTempToTxt(float temp, writeToFile* file_name)
 {
-  //writeToFile tempWFile(file_name);
-  file_name->write(std::to_string(temp));
-  std::cout<<temp<<" i writeTempToTxt"<<std::endl; // til test
+	time_t rawtime;
+	struct tm* timeinfo;
+
+	time(&rawtime);
+	timeinfo = localtime(&rawtime);
+	std::string temp1 = std::to_string(temp);
+	
+	temp1.append(" - ").append(asctime(timeinfo));
+  
+  file_name->write(temp1);
 }
