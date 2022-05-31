@@ -38,4 +38,6 @@ void writeTempToTxt(float temp, writeToFile* file_name)
 	temp1.append(" - ").append(asctime(timeinfo));
   
   file_name->write(temp1);
+
+  std::cout << temp1 << std::endl;
 }
