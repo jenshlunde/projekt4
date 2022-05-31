@@ -3,7 +3,7 @@
 
 int main()
 {
-    writeToFile temperatureData("temperature.txt");
+    writeToFile temperatureData("temperatureCold.txt");
     while(1)
     {       
         float temperature = readTemp();
