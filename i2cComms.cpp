@@ -40,3 +40,9 @@ void writeTempToTxt(float temp, writeToFile* file_name)
 
   std::cout << temp1 << std::endl;
 }
+
+void logTemp(writeToFile* file_name)
+{
+  float temp = readTemp();
+  writeTempToTxt(temp,file_name);
+}

@@ -13,4 +13,4 @@
 
 float readTemp(void);
 void writeTempToTxt(float, writeToFile*);
-void logTemp(void);
+void logTemp(writeToFile*);
