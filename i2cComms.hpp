@@ -1,7 +1,6 @@
 #include <fcntl.h>
 #include <unistd.h>
 #include <sys/ioctl.h>
-#include <string>
 #include "writeToFile.hpp"
 
 #define LM75_DEF_ADD 0x48
