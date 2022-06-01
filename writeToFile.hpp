@@ -1,7 +1,6 @@
 #ifndef writeToFileDEF
 #define writeToFileDEF
 
-#include <iostream>
 #include <fstream>
 
 
